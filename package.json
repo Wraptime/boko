@@ -4,8 +4,9 @@
   "description": "A painless bookmark manager for developers who loves to read",
   "main": "popup.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./scripts/build.sh && rollup --config scripts/rollup.config.js"
+    "start": "rollup --config scripts/rollup.dev.config.js",
+    "build": "rollup --config scripts/rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "bookmark",
@@ -15,6 +16,12 @@
   "license": "ISC",
   "devDependencies": {
     "rollup": "^0.52.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-serve": "^0.4.2"
+  },
+  "dependencies": {
+    "fuse.js": "^3.2.0",
+    "fuzzysearch": "^1.0.3"
   }
 }

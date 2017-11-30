@@ -1,4 +1,4 @@
 #!/bin/sh
-rm -rf ./build
-mkdir build
-cp -a ./assets/. ./build
+rm -rf ./dist
+mkdir dist
+cp -a ./assets/. ./dist
